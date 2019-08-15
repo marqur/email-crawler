@@ -1,0 +1,86 @@
+body {
+  overflow-x: hidden;
+  font-family: $body-font-family;
+  padding-bottom: 200px;
+}
+
+.table td, .table th {
+  padding: 7px !important;
+}
+
+.top-menu {
+  background-color: #f2f2f2;
+}
+
+.table {
+  margin-top: 15px;
+}
+
+/* override bootstrap */
+button {
+  position: relative !important;
+}
+
+.intro {
+  padding-top: 32px;
+  font-size: 19px;
+  font-weight: 300;
+}
+
+.dropdown-toggle {
+    position: relative !important;
+    font-size: 14px;
+    width: 406px;
+    left: 30px;
+    top: -2px;
+    background-color: $white !important;
+    border-color: palette(silver) !important;
+    color: palette(gray) !important;
+    text-align: left !important;
+}
+
+.dropdown-toggle::after {
+  float: right;
+  margin-top: 8px;
+}
+
+.submit-url {
+  button {
+    top: 20px;
+    left: 15px;
+    width: 155px;
+    color: $white !important;
+    font-size: 16px;
+    text-align: center !important;
+    background-color: palette(blue) !important;
+  }
+}
+
+.url-input {
+  margin-left: 30px;
+  font-size: 14px;
+}
+
+.url-label {
+  margin-left: 15px;
+  font-size: 14px;
+}
+
+.form-error {
+  font-size: 12px;
+  position: relative;
+  left: 15px;
+  top: 3px;
+  padding-bottom: 10px;
+  color: palette(red);
+}
+
+.main-title {
+  font-size: 12px;
+  position: relative;
+  top: 5px;
+  left: 40px;
+  strong {
+    font-size: 16px;
+  }
+}

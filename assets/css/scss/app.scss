@@ -1,0 +1,10 @@
+@import './mixins';
+
+// override bootstrap vars
+@import './variables';
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,900&display=swap');
+
+@import 'partials/base.scss';
+@import 'partials/results.scss';
+@import 'partials/loader.scss';

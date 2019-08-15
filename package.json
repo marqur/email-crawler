@@ -1,0 +1,43 @@
+{
+    "devDependencies": {
+        "@babel/core": "^7.0.0-0",
+        "@babel/plugin-proposal-class-properties": "^7.0.0",
+        "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+        "@babel/plugin-syntax-dynamic-import": "^7.0.0",
+        "@babel/plugin-transform-flow-strip-types": "^7.4.4",
+        "@babel/plugin-transform-strict-mode": "^7.0.0",
+        "@babel/preset-env": "^7.0.0",
+        "@babel/preset-flow": "^7.0.0",
+        "@babel/preset-react": "^7.0.0",
+        "@symfony/webpack-encore": "^0.28.0",
+        "babel-preset-react": "^6.24.1",
+        "core-js": "^3.0.0",
+        "node-sass": "^4.12.0",
+        "postcss-loader": "^3.0.0",
+        "precss": "^3.1.2",
+        "prop-types": "^15.7.2",
+        "react": "^16.9.0",
+        "react-dom": "^16.9.0",
+        "reactstrap": "^6.3.1",
+        "regenerator-runtime": "^0.13.2",
+        "sass-loader": "^7.0.1",
+        "webpack-notifier": "^1.6.0"
+    },
+    "license": "UNLICENSED",
+    "private": true,
+    "scripts": {
+        "dev-server": "encore dev-server",
+        "dev": "encore dev",
+        "watch": "encore dev --watch",
+        "build": "encore production --progress",
+        "flow": "flow",
+        "heroku-postbuild": "webpack -p --config ./webpack.config.js"
+    },
+    "dependencies": {
+        "axios": "^0.19.0",
+        "flow-bin": "^0.105.2",
+        "loaders.css": "^0.1.2",
+        "lodash": "^4.17.15",
+        "react-loaders": "^3.0.1"
+    }
+}

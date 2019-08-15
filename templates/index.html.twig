@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <noscript>
+        You need to enable JavaScript to run this app.
+    </noscript>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <h6 class="navbar-brand offset-sm-7 main-title" href="#"><strong>Email Crawler </strong> by Marko Majkic</h6>
+    </nav>
+
+    <div id="root"></div>
+
+
+    {{ parent() }}
+{% endblock %}
+
+
+{% block javascripts %}
+    <script type="text/javascript" src="{{ asset('build/app.js') }}"></script>
+    {{ encore_entry_script_tags('app') }}
+
+
+{% endblock %}

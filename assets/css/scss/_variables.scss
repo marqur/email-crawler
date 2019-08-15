@@ -1,0 +1,36 @@
+
+$palette : (
+        blue: #0E98FC,
+        deep-blue: #03c2fc,
+        transparent-white: rgba(255,255,255,0.65),
+        yellow: #f4b941,
+        light-gray: #edf3f8,
+        pale-gray: #f8fafc,
+        black: #2c3033,
+        dark-gray: #1d364b,
+        gray: #495057,
+        blue-gray: #8ea0b1,
+        blue-gray-transparent: rgba(142, 160, 177, 0.15),
+        medium-gray: #cccccc,
+        transparent-dark-gray: rgba(29, 54, 75, .5),
+        transparent-black: rgba(0, 0, 0, .2),
+        silver: #ced4da,
+        red: #ff5349,
+        green: #38c089,
+        max-red: #E74C3C,
+        max-green: #2ECC71,
+        orange: #f39c12,
+);
+
+$white: #fff;
+
+
+$body-font-family: 'Roboto', Arial, sans-serif;
+$font-size-base: 0.875rem;
+$font-color-main: palette('dark-gray');
+$primary-color: #fff !default;
+$ball-size: 10px !default;
+$margin: 2px !default;
+$line-height: 35px !default;
+$line-width: 4px !default;
+

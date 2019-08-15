@@ -1,0 +1,58 @@
+/**
+ * Helper to get a color value from the color-map
+ * Usage:
+ *     background-color: palette(some-special-blue);
+ *
+ * @param   $key    The color name (key from the map)
+ */
+@function palette($key) {
+  @if map-has-key($palette, $key) {
+    @return map-get($palette, $key);
+  }
+
+  @warn "Unknown `#{$key}` in \$palette.";
+  @return null;
+}
+
+@mixin placeholder {
+  ::-webkit-input-placeholder {@content}
+  :-moz-placeholder           {@content}
+  ::-moz-placeholder          {@content}
+  :-ms-input-placeholder      {@content}
+}
+
+@include placeholder {
+  font-style:italic;
+  font-weight:300;
+  font-size: 14px;
+}
+
+@function delay($interval, $count, $index) {
+  @return ($index * $interval) - ($interval * $count);
+}
+
+@mixin global-bg() {
+  background-color: $primary-color;
+}
+
+@mixin global-animation() {
+  animation-fill-mode: both;
+}
+
+@mixin balls() {
+  @include global-bg();
+
+  width: $ball-size;
+  height: $ball-size;
+  border-radius: 100%;
+  margin: $margin;
+}
+
+@mixin lines() {
+  @include global-bg();
+
+  width: $line-width;
+  height: $line-height;
+  border-radius: 2px;
+  margin: $margin;
+}
