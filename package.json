@@ -34,7 +34,7 @@
         "heroku-postbuild": "webpack -p --config ./webpack.config.js"
     },
     "dependencies": {
-        "axios": "^0.19.0",
+        "axios": "^0.21.1",
         "flow-bin": "^0.105.2",
         "loaders.css": "^0.1.2",
         "lodash": "^4.17.15",
